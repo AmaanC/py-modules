@@ -113,17 +113,20 @@ def userCurrent(name):
         # bookElems = (elem for elem in table.contents if elem != '\n')
         bookElem = table.contents[1]
         titleElem = bookElem.find(class_='title')
-        bookName = titleElem.contents[1].contents[1].string.strip()
+        div = titleElem.contents[1]
+        link = div.contents[1]
+        titleList = list(link.stripped_strings)
+        bookName = ' '.join(titleList).strip()
         return name + ' is reading: ' + search(bookName)
-    except:
+    except Exception as e:
         return 'No books found. The user\'s profile might be private.'
-        raise
+        raise e
 
 
 def main():
     # name = input('Enter the name of the book: ')
     # print(search(name))
-    print(userCurrent('Amaan'))
+    print(userCurrent('klonk'))
     return 0
 
 if __name__ == '__main__':
