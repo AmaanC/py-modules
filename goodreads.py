@@ -20,7 +20,13 @@ userDict = {
     'heddle': '12181320',
     'lif': '6176359',
     'bld1': '4640099',
-    'touya': '41315361'
+    'touya': '41315361',
+    'gigahurt': '1777204',
+    'd4lek': '39512463',
+    'nalkri': '7019867',
+    'elench': '7019867',
+    'ai-terminal': '42802442',
+    'goomba_': '1244196'
 }
 
 userShelf = ('https://www.goodreads.com/review/list/', '?shelf=currently-reading')
